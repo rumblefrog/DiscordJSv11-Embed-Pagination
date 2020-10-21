@@ -3,7 +3,7 @@
 */
 
 const PaginationEmbed = require('./base/PaginationEmbed');
-const { RichEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 /**
  * @description Extends {@link PaginationEmbed}
@@ -263,7 +263,7 @@ class Embeds extends PaginationEmbed {
     if (!isValidArray) throw new Error('Cannot invoke Embeds class without initialising the array to paginate.');
 
     for (let i = 0; i < array.length; i++)
-      if (array[i] instanceof RichEmbed) continue;
+      if (array[i] instanceof MessageEmbed) continue;
       else throw new Error(`(RichEmbeds[${i}]) Cannot invoke Embeds class with an invalid RichEmbed instance.`);
 
     this.array = array;
