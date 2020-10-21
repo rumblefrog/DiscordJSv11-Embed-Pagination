@@ -1,4 +1,4 @@
-const { RichEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 /**
  * Callback for a function emoji.
@@ -46,7 +46,7 @@ const { RichEmbed } = require('discord.js');
 /**
  * @description Extends [MessageEmbed]{@link https://discord.js.org/#/docs/main/master/class/MessageEmbed}
  */
-class PaginationEmbed extends RichEmbed {
+class PaginationEmbed extends MessageEmbed {
 
   /**
    * Options for PaginationEmbed.clientMessage.
