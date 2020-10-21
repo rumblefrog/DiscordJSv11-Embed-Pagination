@@ -3,7 +3,7 @@
 */
 
 const PaginationEmbed = require('./base/PaginationEmbed');
-const { RichEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 /**
  * Function for Formatting Fields.
@@ -184,7 +184,7 @@ class FieldsEmbed extends PaginationEmbed {
   }
 
   _drawList() {
-    const embed = new RichEmbed({
+    const embed = new MessageEmbed({
       type: this.type,
       title: this.title,
       description: this.description,
